@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/img/food1.jpg" />
+    <link rel="icon" type="image/svg+xml" href="./src/img/food.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
 <title>My Invoice App</title>
@@ -39,8 +39,8 @@
         <section>
             <div class="container mb-5 block print:hidden">
               <form id="createRecordForm">
-                <div class="grid grid-cols-4 gap-3 bg-green-100 rounded-lg p-5">
-                  <div class="col-span-2"> 
+                <div class="grid grid-cols-3 gap-2 items-end md:h-full md:grid md:grid-cols-4 md:gap-3  bg-green-100 rounded-lg p-5">
+                  <div class="md:col-span-2 col-span-1"> 
                     <label for="fruites" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a product</label>
                       <select required 
                       id="productSelect" name="product_select"
@@ -132,7 +132,8 @@
               <span class="text-sm text-green-600">Please hover quantity number if you want to add your fruit quantity. </span>
             </div>
         </section>
-        <section id="productSidebar" class="fixed z-50 right-0 w-[450px] h-full translate-x-full bg-white shadow">
+        <section id="productSidebar" class="fixed z-50 right-0 top-0 overflow-y-auto lg:w-[450px] 
+        w-[350px] h-full translate-x-full bg-white shadow">
           <div class="p-4">
             <div class="flex justify-between items-center mb-5">
               <div class="">
